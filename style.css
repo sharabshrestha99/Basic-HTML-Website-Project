@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .brand {
+    display: flex;
+    align-items: center;
+}
+
+nav .links a {
+    margin: 0 0.6rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+height: 35.8vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top: 70px;
+}
+
+header h1,
+header p {
+  text-align: center;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main .container section#projects {
+  flex: 0 0 26%;
+}
+
+main .container section#experience {
+  flex: 0 0 39%;
+}
+
+main .container section#education {
+  flex: 0 0 35%;
+}
+
+main .container section {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main .container section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
