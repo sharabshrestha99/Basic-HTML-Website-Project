@@ -3,92 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic HTML Website Project</title>
+    <meta
+      name="description"
+      content="Frontend Developer Portfolio - Showcasing web development projects and experience"
+    />
+    <meta
+      name="keywords"
+      content="frontend developer, web development, portfolio, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Your Name" />
+    <title>Frontend Developer Portfolio | Basic HTML Website Project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <div class="brand">
-          <img src="logo.svg" alt="Logo" />
-          <span>your name</span>
+          <img src="logo.svg" alt="Portfolio Logo" width="20" height="20" />
+          <span>Your Name</span>
         </div>
-        <div class="links">
-          <a href="index.html">Home</a> / <a href="projects.html">Projects</a> /
+        <div class="links" role="navigation">
+          <a href="index.html" aria-current="page">Home</a> /
+          <a href="projects.html">Projects</a> /
           <a href="articles.html">Articles</a> /
           <a href="contact.html">Contact</a>
         </div>
       </nav>
       <h1>Frontend Developer</h1>
-      <p>html only with proper layout, no styling</p>
+      <p>Building modern web experiences with semantic HTML and clean design</p>
     </header>
+
     <main>
-      <section class="container">
-        <section id="projects">
-          <h4>Projects</h4>
+      <div class="container">
+        <section id="projects" aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Projects</h2>
           <ul>
             <li>HTML Only Portfolio</li>
-            <hr />
             <li>Calculator</li>
-            <hr />
             <li>Quiz App</li>
-            <hr />
             <li>Countdown Timer</li>
-            <hr />
             <li>Product Upcoming Page</li>
-            <hr />
           </ul>
         </section>
-        <section id="experience">
-          <h4>Work Experience</h4>
-          <h5>roadmap.sh</h5>
-          <p>Solved all the frontend projects</p>
-          <a href="#experience">Visit my Profile</a>
-          <hr />
-          <h5>OpenSource Work</h5>
-          <p>
-            Contributed to 50 opensource projects. Made my own projects with 200
-            GitHub Stars.
-          </p>
-          <a href="#experience">Visit my GitHub Profile</a>
+
+        <section id="experience" aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Work Experience</h2>
+          <article>
+            <h3>roadmap.sh</h3>
+            <p>Solved all the frontend projects</p>
+            <a href="https://roadmap.sh/profile">Visit my Profile</a>
+          </article>
+
+          <article>
+            <h3>OpenSource Work</h3>
+            <p>
+              Contributed to 50 opensource projects. Made my own projects with
+              200 GitHub Stars.
+            </p>
+            <a href="https://github.com/yourusername"
+              >Visit my GitHub Profile</a
+            >
+          </article>
         </section>
-        <section id="education">
-          <h4>Education</h4>
+
+        <section id="education" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
           <p>
             Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
             sessions.
           </p>
-          <p>Courses I took:</p>
+          <h3>Courses</h3>
           <ul>
             <li>Object Oriented Programming</li>
             <li>Data Structures and Algorithms</li>
             <li>Web Engineering</li>
-            <li>Artifical Intelligence</li>
+            <li>Artificial Intelligence</li>
             <li>Human Computer Interaction</li>
             <li>Computer Graphics</li>
             <li>Database Management Systems</li>
             <li>Distributed Database Systems</li>
-            <li>Discreet Mathematics</li>
+            <li>Discrete Mathematics</li>
           </ul>
         </section>
-      </section>
-      <section id="reviews">
-        <h4>Reviews from my Teachers</h4>
-        <p>
-          John doe was a brilliant student; always stood out with his
-          assignments. <br />John Doe <br />Assistant Professor
-        </p>
-        <p>
-          John doe was a brilliant student; always stood out with his
-          assignments. <br />John Doe <br />Assistant Professor
-        </p>
-        <p>
-          John doe was a brilliant student; always stood out with his
-          assignments. <br />John Doe <br />Assistant Professor
-        </p>
+      </div>
+
+      <section id="reviews" aria-labelledby="reviews-heading">
+        <h2 id="reviews-heading">Reviews from my Teachers</h2>
+        <article class="review">
+          <blockquote>
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+            <footer>
+              <cite>John Doe, Assistant Professor</cite>
+            </footer>
+          </blockquote>
+        </article>
       </section>
     </main>
-    <footer>&copy; all rights reserved 2025</footer>
+
+    <footer>
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
   </body>
 </html>
